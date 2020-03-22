@@ -17,6 +17,7 @@ def reverse_each_word(string)
   
   starting_array.collect do|string| #iterate over the array
     nu_array << string.reverse #reverse each word in the array
+    #collects all the elements of the starting array and adds them to the new array
   end
   nu_array.join(" ")
 end
