@@ -12,10 +12,11 @@ def reverse_each_word(string)
 end
 
 def reverse_each_word(string)
-  array = string.split(" ") #turn string into an array
+  starting_array = string.split(" ") #turn string into an array
   nu_array = []
-  array.collect do|string| #iterate over the array
+  
+  starting_array.collect do|string| #iterate over the array
     nu_array << string.reverse #reverse each word in the array
   end
-  test_array.join(" ")
+  nu_array.join(" ")
 end
